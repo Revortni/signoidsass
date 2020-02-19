@@ -1,0 +1,63 @@
+//Text
+$base__font-size: 16px;
+$base__line: 24px;
+
+$font-family--primary: 'Roboto';
+$font-family--secondary: 'Roboto';
+
+//Colors
+
+$blue: #003bde;
+$red: #f44336;
+$white: #ffffff;
+$dark-black: #000000;
+$black: #333333;
+$gray: #999999;
+$light-blue: #03a9f4;
+$yellow: #fbc02d;
+$green: #4caf50;
+$violet: #9c27b4;
+$dark-gray: #3c4858;
+$light: #777777;
+
+//Message Colors
+$error: lighten($red, 5%) !default;
+$success: $green !default;
+$edit: $yellow !default;
+
+//Breakpoints
+$sm-device: 576px;
+$md-device: 768px;
+$lg-device: 992px;
+$xl-device: 1200px;
+
+//Font size variables
+$default-font-size: $base__font-size - 2px;
+$s-font-size: $default-font-size - 2px;
+$xs-font-size: $default-font-size - 4px;
+$lg-font-size: $default-font-size + 2px;
+
+//Heading font size vairables
+$heading-line-height: 28px !default;
+$head1-font-size: 24px !default;
+$head2-font-size: $head1-font-size - 8px !default;
+$head3-font-size: $head1-font-size - 10px !default;
+$head4-font-size: $head1-font-size - 12px !default;
+
+// colors
+$color-default: $white;
+$color-primary: $violet;
+$color-info: $light-blue;
+$color-success: $green;
+$color-warn: $yellow;
+$color-danger: $red;
+
+//Color Usage
+$accent-color: $gray;
+$shadow-color: rgba($black, 0.2);
+$border-color: $gray;
+$color-text: $dark-black;
+$color-title: $dark-gray;
+$color-link: $dark-black;
+$color-disabled: $light;
+$background-color: $white;
