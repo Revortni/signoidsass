@@ -2,8 +2,8 @@
 $base__font-size: 16px;
 $base__line: 24px;
 
-$font-family--primary: 'Roboto';
-$font-family--secondary: 'Roboto';
+$font-family--primary: 'Muli', sans-serif;
+$font-family--secondary: 'Muli', sans-serif;
 
 //Colors
 
@@ -25,6 +25,20 @@ $error: lighten($red, 5%) !default;
 $success: $green !default;
 $edit: $yellow !default;
 
+$palettes: (
+  black-shades: (
+    base: $dark-black,
+    mid: darken($dark-black, 50%),
+    dark: darken($dark-black, 30%),
+    light: lighten($dark-black, 30%)
+  ),
+  blue-shades: (
+    base: $blue,
+    dark: darken($blue, 20%),
+    light: lighten($blue, 20%)
+  )
+);
+
 //Breakpoints
 $sm-device: 576px;
 $md-device: 768px;
@@ -39,10 +53,10 @@ $lg-font-size: $default-font-size + 2px;
 
 //Heading font size vairables
 $heading-line-height: 28px !default;
-$head1-font-size: 24px !default;
-$head2-font-size: $head1-font-size - 8px !default;
-$head3-font-size: $head1-font-size - 10px !default;
-$head4-font-size: $head1-font-size - 12px !default;
+$head1-font-size: 36px !default;
+$head2-font-size: $head1-font-size - 4px !default;
+$head3-font-size: 20px !default;
+$head4-font-size: 12px !default;
 
 // colors
 $color-default: $white;
@@ -60,4 +74,5 @@ $color-text: $dark-black;
 $color-title: $dark-gray;
 $color-link: $dark-black;
 $color-disabled: $light;
+$color-border: #e8e8e8;
 $background-color: $white;

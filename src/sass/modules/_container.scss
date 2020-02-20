@@ -1,0 +1,27 @@
+%common-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.container {
+  @extend %common-container;
+
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1541px;
+}
+
+.container-1 {
+  margin-left: 290px;
+  width: 1046px;
+}
+
+.container-popup {
+  width: 590px;
+}
+
+.container-info {
+  width: 394px;
+}

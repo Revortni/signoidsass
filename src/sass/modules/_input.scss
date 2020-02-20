@@ -1,0 +1,122 @@
+.input {
+  padding-bottom: 19px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+
+  @include e(field) {
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    display: block;
+    padding: 14px 0 13px 20px;
+    color: $black;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  select {
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    display: block;
+    padding: 14px 0 13px 20px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 10px;
+  }
+
+  input {
+    @extend .input__field;
+  }
+
+  textarea {
+    @extend .input__field;
+
+    resize: none;
+    min-height: 112px;
+  }
+}
+
+.input-tab {
+  padding-bottom: 32px;
+  padding-top: 12px;
+  color: $dark-black;
+
+  @include m(disabled) {
+    opacity: 0.5;
+  }
+
+  @include e(label) {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+
+  @include e(tab) {
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    margin-top: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 258px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include m(2x) {
+      width: 540px;
+    }
+  }
+
+  @include e(icon) {
+    width: 24px;
+    height: 24px;
+    margin-left: 25px;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include e(details) {
+    flex-grow: 1;
+    margin-left: 18px;
+  }
+
+  @include e(title) {
+    padding-right: 4px;
+    padding-bottom: 6px;
+  }
+
+  @include e(info) {
+    font-size: 11px;
+    line-height: 13px;
+    padding-right: 15px;
+  }
+}
+
+.form {
+  width: 541px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

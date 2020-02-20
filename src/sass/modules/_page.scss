@@ -1,0 +1,73 @@
+.page {
+  width: 100%;
+  padding-bottom: 272px;
+
+  @include e(title) {
+    padding-top: 40px;
+    padding-bottom: 19px;
+  }
+
+  @include e(content) {
+  }
+}
+
+.instruction {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 108px;
+  padding-bottom: 194px;
+  position: relative;
+
+  @include e(text) {
+    padding-top: 17px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @include e(button) {
+  }
+}
+
+.text-bubble {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 184px;
+  height: 184px;
+  border-radius: 50%;
+  background: #61d079;
+  mix-blend-mode: normal;
+
+  @include e(content) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 116px;
+    text-align: center;
+    padding-top: 26px;
+    margin: 0 auto;
+  }
+  @include e(img) {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 16px;
+  }
+
+  @include e(title) {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    /* identical to box height */
+    color: #000000;
+    margin-bottom: 2px;
+  }
+
+  @include e(text) {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}

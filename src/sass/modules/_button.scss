@@ -1,0 +1,58 @@
+.button {
+  padding: 15px 35px 13px 34px;
+
+  border: none;
+  border-radius: 4px;
+  color: $white;
+  background: $blue;
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  display: inline-block;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  /*button modifiers*/
+
+  /*button size starts*/
+  @include m(xs) {
+    padding: 4px 17px 5px 17px;
+  }
+
+  @include m(s) {
+    padding: 15px 25px 13px 25px;
+  }
+
+  @include m(l) {
+    padding: 12px 36px 13px 35px;
+  }
+
+  @include m(xl) {
+    padding: 11px 40px 10px 40px;
+  }
+
+  @include m(xxl) {
+    padding: 12px 58px;
+  }
+  /*button size ends*/
+
+  /*button color starts*/
+
+  @include m(alt) {
+    background-color: $green;
+  }
+  /*button color ends*/
+
+  /* states */
+  @include m(inactive) {
+    opacity: 0.3;
+  }
+}

@@ -1,10 +1,11 @@
 .header {
-  box-shadow: 0px 1px 0px #e8e8e8;
+  box-shadow: 0px 1px 0px $color-border;
   flex-direction: row;
   align-items: center;
 
   @include e(logo) {
     padding-top: 16px;
+    padding-left: 30px;
   }
 
   @include e(options) {
@@ -12,24 +13,29 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    align-items: center;
+    padding-right: 30px;
   }
 
   @include e(nav) {
-    align-self: flex-end;
+    align-items: stretch;
+  }
+
+  @include e(profile) {
+    display: flex;
+    align-self: center;
   }
 }
 
 .nav {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 
   @include e(link) {
     font-size: 16px;
     line-height: 19px;
     text-transform: capitalize;
     margin-right: 65px;
-    padding: 20px 0;
+    padding-top: 20px;
 
     &:last-child {
       margin-right: 0;
@@ -40,18 +46,19 @@
     }
 
     @include m(active) {
-      padding-bottom: 17px;
       border-bottom: 3px solid $blue;
     }
 
     @include m(disabled) {
       opacity: 0.2;
+      cursor: default;
     }
   }
 }
 
 .profile {
   display: flex;
+  align-items: center;
 
   @include e(image) {
     margin-right: 12px;
@@ -62,14 +69,19 @@
     font-size: 14px;
     line-height: 17px;
     margin-right: 8px;
-    align-self: center;
     color: rgba(0, 0, 0, 0.7);
+
     &:hover {
       cursor: pointer;
     }
   }
+}
 
-  @include e(icon) {
-    color: rgba(0, 0, 0, 0.3);
+.icon {
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    color: black;
   }
 }
