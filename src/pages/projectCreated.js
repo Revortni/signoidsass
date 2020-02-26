@@ -1,6 +1,5 @@
 import React from 'react';
 import { FormInput } from '../components/Input';
-import Button from '../components/Button';
 import { FaPen, FaTable } from 'react-icons/fa';
 import {
   MdHourglassEmpty,

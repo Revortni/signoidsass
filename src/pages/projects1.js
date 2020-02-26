@@ -26,10 +26,7 @@ const Project = () => {
                   htmlFor='data-files'
                 >
                   <span className='input-tab__icon'>
-                    <img
-                      src='./assets/icons/cloud_upload.png'
-                      alt='cloud_upload'
-                    />
+                    <img src='./assets/cloud_upload.png' alt='cloud_upload' />
                   </span>
                   <div className='input-tab__details'>
                     <h3 className='input-tab__title'>Upload data files</h3>
@@ -53,10 +50,7 @@ const Project = () => {
                   htmlFor='image-files'
                 >
                   <span className='input-tab__icon'>
-                    <img
-                      src='./assets/icons/cloud_upload.png'
-                      alt='cloud_upload'
-                    />
+                    <img src='./assets/cloud_upload.png' alt='cloud_upload' />
                   </span>
                   <div className='input-tab__details'>
                     <h3 className='input-tab__title'>Upload data files</h3>
@@ -81,7 +75,7 @@ const Project = () => {
               <span className='input-tab__label'>Select dataset</span>
               <div className='input-tab__tab input-tab__tab--2x'>
                 <span className='input-tab__icon'>
-                  <img src='./assets/icons/list.png' alt='cloud_upload' />
+                  <img src='./assets/list.png' alt='cloud_upload' />
                 </span>
                 <div className='input-tab__details'>
                   <h3 className='input-tab__title'>Select dataset</h3>

@@ -9,7 +9,7 @@ const Project = () => {
           <h2 class='page__title'>Projects</h2>
         </div>
         <div className='instruction'>
-          <img src='./icons/create_new_folder.svg' alt='create new folder' />
+          <img src='./assets/create_new_folder.svg' alt='create new folder' />
           <div className='instruction__text'>
             <p>Currently, there are no projects.</p>
             <p>Upload data files to get started with your first project.</p>

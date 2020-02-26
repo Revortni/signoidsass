@@ -91,25 +91,25 @@ const Project = () => {
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <img src='./assets/icons/delete-image.png' alt='delete' />
+                    <img src='./assets/delete-image.png' alt='delete' />
                   </div>
                 </div>
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <img src='./assets/icons/delete-image.png' alt='delete' />
+                    <img src='./assets/delete-image.png' alt='delete' />
                   </div>
                 </div>
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <img src='./assets/icons/delete-image.png' alt='delete' />
+                    <img src='./assets/delete-image.png' alt='delete' />
                   </div>
                 </div>
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <img src='./assets/icons/delete-image.png' alt='delete' />
+                    <img src='./assets/delete-image.png' alt='delete' />
                   </div>
                 </div>
               </div>
