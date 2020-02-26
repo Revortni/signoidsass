@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25436fc2c100f24a7beaba320e2271ab",
+    "revision": "721e6ad215b5a00341850c59217a068f",
     "url": "/signoidsass/index.html"
   },
   {
-    "revision": "03d592fc60e311c64534",
+    "revision": "443f256959f1b891c180",
     "url": "/signoidsass/static/css/main.c6442669.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/signoidsass/static/js/2.0ce2fe87.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03d592fc60e311c64534",
-    "url": "/signoidsass/static/js/main.1d775921.chunk.js"
+    "revision": "443f256959f1b891c180",
+    "url": "/signoidsass/static/js/main.8b3ccdbf.chunk.js"
   },
   {
     "revision": "d4e10494f65984e02eb9",
