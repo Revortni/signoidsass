@@ -10,7 +10,9 @@ const Project = () => {
           <h2 className='page__title'>data library</h2>
           <div className='page__header-option'>
             <StorageInfo />
-            <Button label='upload data' className='button--xs' />
+            <div className='m-l-8'>
+              <Button label='upload data' className='button--s' />
+            </div>
           </div>
         </div>
         <div className='page__content'>

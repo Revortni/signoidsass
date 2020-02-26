@@ -5,7 +5,7 @@ const Row = props => {
 
   if (props.header) {
     columns = props.list.map((x, i) => (
-      <th key={i} className='table__header'>
+      <th key={i} className='table__header table__header--center'>
         {x}
       </th>
     ));
@@ -17,7 +17,7 @@ const Row = props => {
     );
   }
   columns = props.list.map((x, i) => (
-    <td key={i} className='table__column'>
+    <td key={i} className='table__column table__column--center'>
       {x}
     </td>
   ));

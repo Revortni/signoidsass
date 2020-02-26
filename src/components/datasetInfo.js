@@ -4,7 +4,7 @@ import { FormInput } from '../components/Input';
 const Project = () => {
   return (
     <div className='container-dataset-info dataset-info'>
-      <div className='flex-container flex-container--right p-t-16'>
+      <div className='flex-container flex-container--right p-t-4'>
         <div className='dataset-info__close icon icon--24 icon--center'>
           <i className='fa fa-times'></i>
         </div>

@@ -52,27 +52,22 @@ const Project = () => {
               />
             </div>
           </div>
-          <Table val={val} />
-          <FormInput
-            label='Please provide a name for the dataset'
-            placeholder='Labour Party Survey'
-          />
-          <FormInput
-            label='Select analysis field for this dataset'
-            placeholder='My New Project'
-            type='select'
-            options={val}
-          />
-          <Button
-            label='create'
-            className='button--xxl'
-            type='submit'
-            disabled={true}
-          />
+          <div className='p-t-5'>
+            <Table val={val} center={true} />
+          </div>
+          <div className='p-t-6'>
+            <FormInput
+              label='Select analysis field for this dataset'
+              placeholder='My New Project'
+              type='select'
+              options={val}
+            />
+          </div>
+
           <div className='input-tab'>
             <span className='input-tab__label'>add data files</span>
             <label
-              className='input-tab__tab input-tab__tab'
+              className='input-tab__tab input-tab__tab--2x'
               htmlFor='data-files'
             >
               <span className='input-tab__icon'>
@@ -93,18 +88,15 @@ const Project = () => {
               multiple
             />
           </div>
-          <span className='input-tab__label'>add data files</span>
-          <select name='setting' id=''>
-            <option value='setting1'>setting1</option>
-            <option value='setting2'>setting2</option>
-            <option value='setting3'>setting3</option>
-          </select>
-          <Button
-            label='create'
-            className='button--xxl'
-            type='submit'
-            disabled={true}
-          />
+
+          <div className='p-t-8'>
+            <Button
+              label='create'
+              className='button--xl'
+              type='submit'
+              disabled={true}
+            />
+          </div>
         </form>
       </div>
     </div>

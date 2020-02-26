@@ -111,3 +111,16 @@ $sides: (top, bottom, left, right);
     font-weight: bold;
   }
 }
+
+/* for side test panel*/
+.test-link {
+  position: fixed;
+  left: 0;
+  top: 200px;
+
+  ul {
+    li {
+      margin: 10px;
+    }
+  }
+}

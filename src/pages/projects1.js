@@ -17,56 +17,60 @@ const Project = () => {
             placeholder='This is a short description about the project.'
             type='textarea'
           />
-          <div className='flex-container'>
-            <div className='input-tab'>
-              <span className='input-tab__label'>add data files</span>
-              <label
-                className='input-tab__tab input-tab__tab'
-                htmlFor='data-files'
-              >
-                <span className='input-tab__icon'>
-                  <img src='./icons/cloud_upload.png' alt='cloud_upload' />
-                </span>
-                <div className='input-tab__details'>
-                  <h3 className='input-tab__title'>Upload data files</h3>
-                  <div className='input-tab__info'>
-                    Use .csv files only. Maximum file size is 20M.
+          <div className='p-b-8'>
+            <div className='flex-container'>
+              <div className='input-tab'>
+                <span className='input-tab__label'>add data files</span>
+                <label
+                  className='input-tab__tab input-tab__tab'
+                  htmlFor='data-files'
+                >
+                  <span className='input-tab__icon'>
+                    <img src='./icons/cloud_upload.png' alt='cloud_upload' />
+                  </span>
+                  <div className='input-tab__details'>
+                    <h3 className='input-tab__title'>Upload data files</h3>
+                    <div className='input-tab__info'>
+                      Use .csv files only. Maximum file size is 20M.
+                    </div>
                   </div>
-                </div>
-              </label>
-              <input
-                type='file'
-                name='data-files'
-                id='data-files'
-                className='input-tab__input-tag'
-                multiple
-              />
-            </div>
-            <div className='input-tab'>
-              <span className='input-tab__label'>add images</span>
-              <label
-                className='input-tab__tab input-tab__tab'
-                htmlFor='image-files'
-              >
-                <span className='input-tab__icon'>
-                  <img src='./icons/cloud_upload.png' alt='cloud_upload' />
-                </span>
-                <div className='input-tab__details'>
-                  <h3 className='input-tab__title'>Upload data files</h3>
-                  <div className='input-tab__info'>
-                    Upload .jpg or .png files. Select multiple files up to 2M
-                    each.
+                </label>
+                <input
+                  type='file'
+                  name='data-files'
+                  id='data-files'
+                  className='input-tab__input-tag'
+                  multiple
+                />
+              </div>
+              <div className='input-tab'>
+                <span className='input-tab__label'>add images</span>
+                <label
+                  className='input-tab__tab input-tab__tab'
+                  htmlFor='image-files'
+                >
+                  <span className='input-tab__icon'>
+                    <img src='./icons/cloud_upload.png' alt='cloud_upload' />
+                  </span>
+                  <div className='input-tab__details'>
+                    <h3 className='input-tab__title'>Upload data files</h3>
+                    <div className='input-tab__info'>
+                      Upload .jpg or .png files. Select multiple files up to 2M
+                      each.
+                    </div>
                   </div>
-                </div>
-              </label>
-              <input
-                type='file'
-                name='image-files'
-                id='image-files'
-                className='input-tab__input-tag'
-                multiple
-              />
+                </label>
+                <input
+                  type='file'
+                  name='image-files'
+                  id='image-files'
+                  className='input-tab__input-tag'
+                  multiple
+                />
+              </div>
             </div>
+          </div>
+          <div className='p-b-7'>
             <div className='input-tab'>
               <span className='input-tab__label'>Select dataset</span>
               <div className='input-tab__tab input-tab__tab--2x'>

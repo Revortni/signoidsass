@@ -24,7 +24,7 @@ const Project = () => {
             label='upload data'
             className={'instruction__button button--green button--l'}
           />
-          <div className='text-bubble'>
+          {/* <div className='text-bubble'>
             <div className='text-bubble__content'>
               <div className='text-bubble__img'>
                 <img src='./icons/waving_hand.png' alt='' />
@@ -35,7 +35,7 @@ const Project = () => {
                 information.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

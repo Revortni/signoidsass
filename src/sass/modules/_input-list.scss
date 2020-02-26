@@ -1,0 +1,28 @@
+.input-list {
+  width: 100%;
+  padding: 2px 5px;
+  display: flex;
+  align-items: flex-start;
+  min-height: 114px;
+
+  @extend %border;
+
+  @include e(item) {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 13px;
+    margin: 10px;
+    padding: 6px 8px 6px 12px;
+  }
+
+  @include e(text) {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  @include e(icon) {
+    margin-left: 15px;
+  }
+}
