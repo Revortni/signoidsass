@@ -7,7 +7,7 @@ const Project = () => {
     <div className='container'>
       <div className='page container-1'>
         <div className='page__header flex-container'>
-          <h2 class='page__title'>Projects</h2>
+          <h2 className='page__title'>Projects</h2>
         </div>
         <div className='instruction'>
           <MdCreateNewFolder size={66} className='icon' />

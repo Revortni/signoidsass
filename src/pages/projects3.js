@@ -26,7 +26,7 @@ const Project = () => {
             placeholder='This is a short description about the project.'
             type='textarea'
           />
-          <div className='flex-container'>
+          <div className='flex-container p-b-11'>
             <div className='input-tab input-tab--disabled'>
               <span className='input-tab__label'>add data files</span>
               <label
@@ -34,7 +34,7 @@ const Project = () => {
                 htmlFor='data-files'
               >
                 <span className='input-tab__icon'>
-                  <MdCloudUpload />
+                  <MdCloudUpload size={24} />
                 </span>
                 <div className='input-tab__details'>
                   <h3 className='input-tab__title'>Upload data files</h3>
@@ -58,7 +58,7 @@ const Project = () => {
                 htmlFor='data-images'
               >
                 <span className='input-tab__icon'>
-                  <MdCloudUpload />
+                  <MdCloudUpload size={24} />
                 </span>
                 <div className='input-tab__details'>
                   <h3 className='input-tab__title'>Upload images</h3>
@@ -77,6 +77,8 @@ const Project = () => {
                 multiple
               />
             </div>
+          </div>
+          <div className='flex-container m-b-12'>
             <div className='preview'>
               <div className='preview__header'>
                 <div className='preview__label'>uploaded images</div>
@@ -86,25 +88,25 @@ const Project = () => {
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <MdDelete />
+                    <MdDelete size={12} />
                   </div>
                 </div>
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <MdDelete />
+                    <MdDelete size={12} />
                   </div>
                 </div>
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <MdDelete />
+                    <MdDelete size={12} />
                   </div>
                 </div>
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <MdDelete />
+                    <MdDelete size={12} />
                   </div>
                 </div>
               </div>
@@ -118,7 +120,7 @@ const Project = () => {
           />
           <Button
             label='create'
-            className='button--xxl'
+            className='button--xl'
             type='submit'
             disabled={true}
           />

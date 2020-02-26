@@ -5,7 +5,7 @@ export const InputList = props => {
   let { label, name } = props;
 
   return (
-    <div className='input-list__container'>
+    <div className='input-list__container p-b-10'>
       <label htmlFor={name}>{label}</label>
       {/* <input name={name} {...rest} /> */}
       <div className='input-list'>
