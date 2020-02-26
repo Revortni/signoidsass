@@ -4,32 +4,24 @@ const Row = props => {
   let columns = [];
 
   if (props.header) {
-    columns = props.list.map((x, i) => (
-      <th key={i} className='table__header table__header--center'>
-        {x}
-      </th>
-    ));
+    columns = props.list.map((x, i) => <th key={i}>{x}</th>);
 
     return (
-      <thead>
+      <thead className='table-csv__header'>
         <tr>{columns}</tr>
       </thead>
     );
   }
-  columns = props.list.map((x, i) => (
-    <td key={i} className='table__column table__column--center'>
-      {x}
-    </td>
-  ));
+  columns = props.list.map((x, i) => <td key={i}>{x}</td>);
 
-  return <tr>{columns}</tr>;
+  return <tr className='table-csv__row'>{columns}</tr>;
 };
 
 const Table = ({ val }) => {
   return (
-    <table className='table'>
+    <table className='table-csv'>
       <Row list={val} header />
-      <tbody className='table__body'>
+      <tbody>
         <Row list={val} />
         <Row list={val} />
         <Row list={val} />

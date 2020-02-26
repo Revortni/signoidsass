@@ -4,6 +4,11 @@
   display: flex;
   align-items: flex-start;
   min-height: 114px;
+  padding: 12px 16px;
+  @include e(container) {
+    color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+  }
 
   @extend %border;
 
@@ -13,8 +18,9 @@
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     border-radius: 13px;
-    margin: 10px;
+    margin-right: 10px;
     padding: 6px 8px 6px 12px;
+    margin-bottom: 10px;
   }
 
   @include e(text) {
@@ -24,5 +30,10 @@
 
   @include e(icon) {
     margin-left: 15px;
+  }
+
+  @include e(input) {
+    border: none;
+    padding: 6px 8px 6px 12px;
   }
 }

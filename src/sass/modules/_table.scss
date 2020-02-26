@@ -41,3 +41,36 @@
     color: #000000;
   }
 }
+
+.table-csv {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.090991);
+  border-radius: 4px;
+  padding-bottom: 35px;
+
+  td,
+  th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @include e(header) {
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+
+    th {
+      padding: 12px 0;
+    }
+  }
+
+  @include e(row) {
+    td {
+      padding-top: 22px;
+      vertical-align: top;
+      text-align: center;
+    }
+  }
+}

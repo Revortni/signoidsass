@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../components/Button';
+import { MdCreateNewFolder } from 'react-icons/md';
 
 const Project = () => {
   return (
@@ -9,7 +10,7 @@ const Project = () => {
           <h2 class='page__title'>Projects</h2>
         </div>
         <div className='instruction'>
-          <img src='./assets/create_new_folder.svg' alt='create new folder' />
+          <MdCreateNewFolder size={66} className='icon' />
           <div className='instruction__text'>
             <p>Currently, there are no projects.</p>
             <p>Upload data files to get started with your first project.</p>

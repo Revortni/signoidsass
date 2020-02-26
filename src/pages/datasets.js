@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import StorageInfo from '../components/StorageInfo';
+import { MdCreateNewFolder } from 'react-icons/md';
 
 const Project = () => {
   return (
@@ -13,7 +14,7 @@ const Project = () => {
           </div>
         </div>
         <div className='instruction p-t-17'>
-          <img src='./assets/create_new_folder.svg' alt='create new folder' />
+          <MdCreateNewFolder />
           <div className='instruction__text'>
             <p>
               Currently, there are no files in your library. Upload your first

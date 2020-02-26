@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormInput } from '../components/Input';
 import Button from '../components/Button';
+import { MdCloudUpload, MdDelete } from 'react-icons/md';
 
 const Project = () => {
   const val = [
@@ -33,10 +34,7 @@ const Project = () => {
                 htmlFor='data-files'
               >
                 <span className='input-tab__icon'>
-                  <img
-                    src='./assets/icons/cloud_upload.png'
-                    alt='cloud_upload'
-                  />
+                  <MdCloudUpload />
                 </span>
                 <div className='input-tab__details'>
                   <h3 className='input-tab__title'>Upload data files</h3>
@@ -60,10 +58,7 @@ const Project = () => {
                 htmlFor='data-images'
               >
                 <span className='input-tab__icon'>
-                  <img
-                    src='./assets/icons/cloud_upload.png'
-                    alt='cloud_upload'
-                  />
+                  <MdCloudUpload />
                 </span>
                 <div className='input-tab__details'>
                   <h3 className='input-tab__title'>Upload images</h3>
@@ -91,25 +86,25 @@ const Project = () => {
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <img src='./assets/delete-image.png' alt='delete' />
+                    <MdDelete />
                   </div>
                 </div>
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <img src='./assets/delete-image.png' alt='delete' />
+                    <MdDelete />
                   </div>
                 </div>
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <img src='./assets/delete-image.png' alt='delete' />
+                    <MdDelete />
                   </div>
                 </div>
                 <div className='preview__item'>
                   <img src='https://picsum.photos/id/200/200/300' alt='ones' />
                   <div className='preview__remove-icon icon'>
-                    <img src='./assets/delete-image.png' alt='delete' />
+                    <MdDelete />
                   </div>
                 </div>
               </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { FormInput } from '../components/Input';
 import Button from '../components/Button';
+import { MdCloudUpload } from 'react-icons/md';
+import { FaListUl } from 'react-icons/fa';
 
 const Project = () => {
   return (
@@ -26,7 +28,7 @@ const Project = () => {
                   htmlFor='data-files'
                 >
                   <span className='input-tab__icon'>
-                    <img src='./assets/cloud_upload.png' alt='cloud_upload' />
+                    <MdCloudUpload size={24} class='icon' />
                   </span>
                   <div className='input-tab__details'>
                     <h3 className='input-tab__title'>Upload data files</h3>
@@ -50,7 +52,7 @@ const Project = () => {
                   htmlFor='image-files'
                 >
                   <span className='input-tab__icon'>
-                    <img src='./assets/cloud_upload.png' alt='cloud_upload' />
+                    <MdCloudUpload size={24} class='icon' />
                   </span>
                   <div className='input-tab__details'>
                     <h3 className='input-tab__title'>Upload data files</h3>
@@ -75,7 +77,7 @@ const Project = () => {
               <span className='input-tab__label'>Select dataset</span>
               <div className='input-tab__tab input-tab__tab--2x'>
                 <span className='input-tab__icon'>
-                  <img src='./assets/list.png' alt='cloud_upload' />
+                  <FaListUl size={18} class='icon' />
                 </span>
                 <div className='input-tab__details'>
                   <h3 className='input-tab__title'>Select dataset</h3>

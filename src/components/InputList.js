@@ -2,17 +2,19 @@ import React from 'react';
 import { MdClose } from 'react-icons/md';
 
 export const InputList = props => {
-  let { className, textarea, label, name, ...rest } = props;
-  let style = className || '';
+  let { label, name } = props;
 
   return (
-    <div className={['input ' + style]}>
+    <div className='input-list__container'>
       <label htmlFor={name}>{label}</label>
       {/* <input name={name} {...rest} /> */}
       <div className='input-list'>
-        <InputItem text="don't know" />
-        <InputItem text='guess' />
-        <InputItem text='not sure' />
+        <div className='flex-container flex-container--left'>
+          <InputItem text="don't know" />
+          <InputItem text='guess' />
+          <InputItem text='not sure' />
+          <input type='text' className='input-list__input' />
+        </div>
       </div>
     </div>
   );
@@ -27,4 +29,4 @@ const InputItem = ({ text }) => {
   );
 };
 
-export default InputItem;
+export default InputList;
