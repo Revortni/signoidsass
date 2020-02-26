@@ -1,0 +1,30 @@
+.card {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 15px 18px 0 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-start;
+
+  @include e(icon) {
+    margin-right: 20px;
+  }
+
+  @include e(content) {
+  }
+
+  @include e(title) {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-bottom: 5px;
+  }
+
+  @include e(info) {
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+    padding-bottom: 16px;
+  }
+}

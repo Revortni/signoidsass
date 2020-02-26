@@ -1,0 +1,24 @@
+.storage-info {
+  @extend %flex-center;
+
+  @include e(ring) {
+    @extend %flex-center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: $green;
+    margin-right: 10px;
+
+    @include m(empty) {
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @include e(info) {
+    font-size: 11px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,28 @@
+/* status block starts*/
+.status {
+  color: rgba(0, 0, 0, 0.5);
+
+  @include m(success) {
+    color: $color-success;
+  }
+
+  @include m(warn) {
+    color: $color-warn;
+  }
+
+  @include m(danger) {
+    color: $color-danger;
+  }
+
+  @include e(text) {
+    font-size: 16px;
+    line-height: 19px;
+
+    text-transform: capitalize;
+  }
+
+  @include e(icon) {
+    margin-right: 7px;
+  }
+}
+/* status block ends*/

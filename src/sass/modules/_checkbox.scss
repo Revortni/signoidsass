@@ -1,0 +1,41 @@
+/* Customize the label (the container) */
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+
+  @include m(checked) {
+    color: $black;
+  }
+
+  @include e(input-box) {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+  }
+
+  @include e(input) {
+    @extend %flex-center;
+    width: 24px;
+    height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+
+    @include m(checked) {
+      width: 24px;
+      height: 24px;
+      color: $blue;
+    }
+  }
+
+  @include e(label) {
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 12px;
+  }
+
+  @include e(options) {
+    padding-left: 36px;
+    padding-top: 16px;
+  }
+}

@@ -1,0 +1,23 @@
+.popup {
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 12px 14px rgba(0, 0, 0, 0.090991);
+
+  @include e(header) {
+    padding: 20px 28px 18px 28px;
+    box-shadow: 0px 12px 14px rgba(0, 0, 0, 0.090991);
+  }
+
+  @include e(title) {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  @include e(content) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @include e(button) {
+    margin-left: 24px;
+  }
+}

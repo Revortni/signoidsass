@@ -5,30 +5,36 @@ const Row = props => {
 
   if (props.header) {
     columns = props.list.map((x, i) => (
-      <div key={i} className='table__column table__column--header'>
+      <th key={i} className='table__header'>
         {x}
-      </div>
+      </th>
     ));
 
-    return <div className='table__row table__row--header'>{columns}</div>;
+    return (
+      <thead>
+        <tr>{columns}</tr>
+      </thead>
+    );
   }
   columns = props.list.map((x, i) => (
-    <div key={i} className='table__column'>
+    <td key={i} className='table__column'>
       {x}
-    </div>
+    </td>
   ));
 
-  return <div className='table__row'>{columns}</div>;
+  return <tr>{columns}</tr>;
 };
 
 const Table = ({ val }) => {
   return (
-    <div className='table'>
+    <table className='table'>
       <Row list={val} header />
-      <Row list={val} />
-      <Row list={val} />
-      <Row list={val} />
-    </div>
+      <tbody className='table__body'>
+        <Row list={val} />
+        <Row list={val} />
+        <Row list={val} />
+      </tbody>
+    </table>
   );
 };
 

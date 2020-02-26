@@ -1,0 +1,27 @@
+.dataset-info {
+  background-color: 333px;
+  @include e(close) {
+    margin: 18px 12px 14px 0;
+  }
+
+  @include e(item) {
+    padding: 0 42px 28px 36px;
+  }
+}
+
+.list {
+  @include e(title) {
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+    text-transform: capitalize;
+    padding-bottom: 4px;
+  }
+
+  @include e(content) {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+}

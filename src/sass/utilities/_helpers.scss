@@ -36,3 +36,78 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loop to generate padding and margin starts*/
+
+$multiplier: 4;
+$sides: (top, bottom, left, right);
+
+@for $i from 1 through 20 {
+  $space: $i * $multiplier;
+  .m-#{$i} {
+    margin: #{$space}px;
+  }
+
+  .p-#{$i} {
+    padding: #{$space}px;
+  }
+
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$i} {
+      margin-#{$side}: #{$space}px;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$i} {
+      padding-#{$side}: #{$space}px;
+    }
+  }
+}
+
+/* Loop to generate padding and margin ends*/
+
+/*rotate transform class starts*/
+
+@for $i from 1 through 8 {
+  $angle: $i * 45;
+  .rotate-#{$angle} {
+    transform: rotate(#{$angle}deg);
+  }
+}
+
+/*rotate transform class ends*/
+
+.mirror {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.border {
+  @include e(left) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @include m(right) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @include e(bottom) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.text {
+  @include m(bold) {
+    font-weight: bold;
+  }
+
+  @include m(title) {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+}

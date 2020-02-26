@@ -1,5 +1,14 @@
 import React from 'react';
 
+const val = [
+  'All projects',
+  'ABBR',
+  'Shortcut URL',
+  'Date Created',
+  'ISSN',
+  'Author'
+];
+
 export const FormInput = props => {
   let { className, textarea, label, name, type, ...rest } = props;
   let style = className || '';
@@ -9,7 +18,7 @@ export const FormInput = props => {
       ip = <textarea {...rest} name={name} />;
       break;
     case 'select':
-      let { options, ...other } = rest;
+      let { options, ...other } = { options: val, ...rest };
       ip = (
         <select name={name} {...other}>
           {options.map((x, i) => {
@@ -29,7 +38,7 @@ export const FormInput = props => {
 
   return (
     <div className={['input ' + style]}>
-      <label htmlFor={name}>{label}</label>
+      {label ? <label htmlFor={name}>{label}</label> : null}
       {ip}
     </div>
   );

@@ -1,5 +1,10 @@
+%border {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
 .input {
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   color: rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal;
 
@@ -7,11 +12,9 @@
     font-size: 16px;
     line-height: 19px;
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
     display: block;
-    padding: 14px 0 13px 20px;
-    color: $black;
+
+    @extend %border;
 
     &::placeholder {
       color: rgba(0, 0, 0, 0.5);
@@ -26,30 +29,57 @@
     font-size: 16px;
     line-height: 19px;
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
     display: block;
-    padding: 14px 0 13px 20px;
+    padding: 14px 0px 10px 20px;
     color: rgba(0, 0, 0, 0.5);
-    padding-right: 10px;
+
+    @extend %border;
   }
 
   input {
     @extend .input__field;
+    padding: 14px 0 13px 20px;
+    color: $black;
   }
 
   textarea {
     @extend .input__field;
+    padding: 14px 0 13px 20px;
+    color: $black;
 
     resize: none;
     min-height: 112px;
   }
+
+  @include m(small) {
+    padding-bottom: 0;
+
+    select {
+      font-size: 11px;
+      line-height: 13px;
+      margin: 0;
+      padding: 0;
+      padding: 6px 12px;
+      box-sizing: border-box;
+
+      option {
+        border: none;
+      }
+    }
+  }
 }
 
 .input-tab {
-  padding-bottom: 32px;
-  padding-top: 12px;
   color: $dark-black;
+
+  @include e(input-tag) {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
 
   @include m(disabled) {
     opacity: 0.5;
@@ -60,6 +90,7 @@
     font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
+    padding-bottom: 12px;
   }
 
   @include e(tab) {
@@ -67,13 +98,14 @@
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
-    margin-top: 12px;
     padding-top: 20px;
     padding-bottom: 10px;
     width: 258px;
 
-    &:hover {
+    &:hover,
+    :focus {
       cursor: pointer;
+      border-style: solid;
     }
 
     @include m(2x) {
@@ -108,15 +140,39 @@
     font-size: 11px;
     line-height: 13px;
     padding-right: 15px;
+    padding-bottom: 10px;
+  }
+
+  @include m(disabled) {
+    opacity: 0.4;
   }
 }
 
-.form {
-  width: 541px;
-}
-
-.flex-container {
+.input-list {
+  width: 100%;
+  padding: 2px 5px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: 114px;
+
+  @extend %border;
+
+  @include e(item) {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 13px;
+    margin: 10px;
+    padding: 6px 8px 6px 12px;
+  }
+
+  @include e(text) {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  @include e(icon) {
+    margin-left: 15px;
+  }
 }

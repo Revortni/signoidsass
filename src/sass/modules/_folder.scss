@@ -1,0 +1,49 @@
+.folder {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  cursor: pointer;
+  min-height: 70px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  @include m(add-folder) {
+    opacity: 0.25;
+  }
+
+  @include e(container) {
+    padding-left: 20px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  @include e(icon) {
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 17px;
+  }
+
+  @include e(info) {
+    padding-bottom: 16px;
+  }
+
+  @include e(name) {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-bottom: 5px;
+    padding-right: 63px;
+  }
+
+  @include e(details) {
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.53;
+  }
+}

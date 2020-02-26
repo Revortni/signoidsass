@@ -1,0 +1,16 @@
+.content {
+  padding-bottom: 37px;
+
+  @include e(header) {
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+  }
+
+  @include e(container) {
+    justify-content: flex-start;
+
+    .folder:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

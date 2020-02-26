@@ -2,8 +2,10 @@
 $base__font-size: 16px;
 $base__line: 24px;
 
-$font-family--primary: 'Muli', sans-serif;
-$font-family--secondary: 'Muli', sans-serif;
+$font-family--primary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
+  'Helvetica Neue';
+$font-family--secondary: -apple-system, system-ui, BlinkMacSystemFont,
+  'Segoe UI', Roboto;
 
 //Colors
 
@@ -14,8 +16,8 @@ $dark-black: #000000;
 $black: #333333;
 $gray: #999999;
 $light-blue: #03a9f4;
-$yellow: #fbc02d;
-$green: #4caf50;
+$yellow: #fdc228;
+$green: #61d079;
 $violet: #9c27b4;
 $dark-gray: #3c4858;
 $light: #777777;

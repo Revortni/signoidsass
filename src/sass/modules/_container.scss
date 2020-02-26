@@ -13,15 +13,54 @@
   max-width: 1541px;
 }
 
+/* Primary container with 290px spacing on the left*/
 .container-1 {
   margin-left: 290px;
-  width: 1046px;
+  width: 100%;
+  max-width: 1046px;
+}
+
+/* Container covering the whole page*/
+.container-2 {
+  margin-left: 80px;
+  margin-right: 54px;
+}
+
+/* Primary container without 290px spacing on the left*/
+.container-3 {
+  width: 100%;
+  max-width: 1046px;
 }
 
 .container-popup {
-  width: 590px;
+  max-width: 590px;
+  width: 100%;
 }
 
-.container-info {
-  width: 394px;
+.container-dataset-info {
+  max-width: 394px;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include m(center) {
+    justify-content: center;
+  }
+
+  @include m(left) {
+    justify-content: flex-start;
+  }
+
+  @include m(right) {
+    justify-content: flex-end;
+  }
+
+  @include m(top) {
+    align-items: flex-start;
+  }
 }
