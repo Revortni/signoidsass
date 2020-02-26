@@ -34,7 +34,10 @@ const Project = () => {
                 htmlFor='data-files'
               >
                 <span className='input-tab__icon'>
-                  <img src='./icons/cloud_upload.png' alt='cloud_upload' />
+                  <img
+                    src='./assets/icons/cloud_upload.png'
+                    alt='cloud_upload'
+                  />
                 </span>
                 <div className='input-tab__details'>
                   <h3 className='input-tab__title'>Upload data files</h3>
@@ -71,7 +74,7 @@ const Project = () => {
               htmlFor='data-files'
             >
               <span className='input-tab__icon'>
-                <img src='./icons/cloud_upload.png' alt='cloud_upload' />
+                <img src='./assets/icons/cloud_upload.png' alt='cloud_upload' />
               </span>
               <div className='input-tab__details'>
                 <h3 className='input-tab__title'>Upload data files</h3>
