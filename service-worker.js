@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/signoidsass/precache-manifest.8368bff44b2e50938152d6f26fe6d637.js"
+  "/signoidsass/precache-manifest.274723bcfa3b20ebffd0aeb933e60572.js"
 );
 
 self.addEventListener('message', (event) => {
