@@ -21,15 +21,6 @@
     color: #80868b;
   }
 
-  @include e(header-option) {
-    display: flex;
-    align-items: center;
-
-    & > input {
-      margin-left: 12px;
-    }
-  }
-
   @include e(content) {
     padding-top: 32px;
   }

@@ -1,6 +1,6 @@
 /* status block starts*/
 .status {
-  color: rgba(0, 0, 0, 0.5);
+  color: $light;
 
   @include m(success) {
     color: $color-success;
@@ -22,7 +22,7 @@
   }
 
   @include e(icon) {
-    margin-right: 7px;
+    margin-right: 8px;
   }
 }
 /* status block ends*/

@@ -22,9 +22,9 @@
   }
 
   @include e(content) {
-    padding-top: 16px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 16px;
   }
 
   @include e(item) {

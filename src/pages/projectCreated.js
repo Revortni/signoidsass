@@ -10,6 +10,7 @@ import {
 import { IoMdCloudDownload } from 'react-icons/io';
 import { GoGear } from 'react-icons/go';
 import Graph1 from '../assets/graph1.png';
+import GraphEmpty from '../assets/graph-empty.png';
 
 const Project = () => {
   const val = [
@@ -93,16 +94,41 @@ const Project = () => {
                     <h3 className='text--black text--bold '>
                       Key Concepts (ngram Analysis)
                     </h3>
-
                     <MdReply size={24} className='icon mirror' />
                   </div>
                   <img src={Graph1} alt='graph' />
+                  <div className='flex-container flex-container--right'>
+                    <div className='graph-button__wrapper flex-container '>
+                      <div className='graph-button__container graph-button__container--selected'>
+                        <div className='graph-button__dot'></div>
+                      </div>
+                      <div className='graph-button__container '>
+                        <div className='graph-button__dot'></div>
+                        <div className='graph-button__dot'></div>
+                      </div>
+                      <div className='graph-button__container'>
+                        <div className='graph-button__dot'></div>
+                        <div className='graph-button__dot'></div>
+                        <div className='graph-button__dot'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='card card--large m-l-7'>
+                  <div className='flex-container p-b-6'>
+                    <h3 className='text--black '>
+                      Analysing<span>...</span>
+                    </h3>
+
+                    <MdReply size={24} className='icon mirror' />
+                  </div>
+                  <img src={GraphEmpty} alt='graph' />
                 </div>
               </div>
             </div>
           </div>
           <div className='side-bar page__content p-l-7'>
-            <div>
+            <div className='side-bar__content'>
               <h4>project dataset</h4>
               <div className='card'>
                 <div className='card__icon'>

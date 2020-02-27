@@ -63,4 +63,13 @@
   @include m(top) {
     align-items: flex-start;
   }
+
+  @include m(bottom) {
+    align-items: flex-end;
+  }
+}
+
+.form {
+  max-width: 541px;
+  width: 100%;
 }

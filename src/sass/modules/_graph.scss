@@ -1,0 +1,38 @@
+.graph-button {
+  @include e(dot) {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $blue;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  @include e(container) {
+    padding: 10px 12px;
+    @extend %flex-center;
+
+    border: 1px solid #d5dce0;
+
+    &:first-child {
+      border: 1px solid #d5dce0;
+      border-right: none;
+    }
+
+    &:last-child {
+      border: 1px solid #d5dce0;
+      border-left: none;
+    }
+
+    @include m(selected) {
+      border: 1px solid $blue;
+    }
+  }
+
+  @include e(wrapper) {
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}

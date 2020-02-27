@@ -7,7 +7,7 @@
     line-height: 14px;
     padding-bottom: 17px;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.5);
+    color: $light;
   }
 
   @include e(body) {
@@ -21,16 +21,13 @@
   }
 
   @include e(icon) {
-    padding-right: 25px;
     cursor: pointer;
-    i {
-      color: rgba(0, 0, 0, 0.5);
-    }
+    color: $light;
   }
 
   @include e(icon-container) {
     a:not(:last-child) {
-      margin-right: 23px;
+      margin-right: 24px;
     }
   }
 
@@ -38,28 +35,40 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color: $black;
+
+    max-width: 500px;
+
+    @extend %ellipsis;
+
+    &:not(:first-child) {
+      margin-left: 24px;
+    }
+  }
+
+  @include e(flex) {
+    display: flex;
+    align-items: center;
   }
 }
 
 .table-csv {
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.090991);
+  border: 1px solid $lightest;
+  box-shadow: 0px 4px 4px $lightest;
   border-radius: 4px;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
 
   td,
   th {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid $lightest;
   }
 
   @include e(header) {
     text-align: center;
     font-size: 12px;
     line-height: 14px;
-    color: #000000;
+    color: $black;
 
     th {
       padding: 12px 0;

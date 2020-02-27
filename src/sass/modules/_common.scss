@@ -22,25 +22,20 @@
 }
 
 .icon {
-  color: rgba(0, 0, 0, 0.3);
+  color: $lighter;
   cursor: pointer;
   font-size: 18px;
 
+  &:hover {
+    color: $black;
+  }
+
   @include m(yellow) {
-    color: #fdc228;
+    color: $color-warn;
   }
 
   @include m(center) {
     @extend %flex-center;
-  }
-
-  @include m(24) {
-    width: 24px;
-    height: 24px;
-  }
-
-  &:hover {
-    color: black;
   }
 
   img {
@@ -60,7 +55,7 @@
   @include e(text) {
     font-size: 11px;
     line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
+    color: $light;
     padding-left: 8px;
   }
 }
@@ -68,10 +63,6 @@
 .options {
   display: flex;
   align-items: center;
-
-  & > input {
-    margin-left: 12px;
-  }
 
   @include e(item) {
     display: flex;
@@ -82,10 +73,9 @@
       margin-left: 0;
       margin-right: 20px;
     }
-  }
-}
 
-.form {
-  max-width: 541px;
-  width: 100%;
+    @include m(space-12) {
+      margin-left: 12px;
+    }
+  }
 }

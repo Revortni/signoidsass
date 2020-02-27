@@ -1,5 +1,5 @@
 .card {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid $lightest;
   border-radius: 5px;
   padding: 15px 18px 0 20px;
   margin-top: 20px;
@@ -15,28 +15,26 @@
     }
   }
 
-  @include m(empty) {
+  @include m(large) {
     height: 334px;
+    display: block;
+    padding: 20px 16px 22px 32px;
   }
 
   @include e(icon) {
     margin-right: 20px;
   }
 
-  @include e(content) {
-  }
-
   @include e(title) {
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color: $black;
     padding-bottom: 5px;
   }
 
   @include e(info) {
     line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
-    mix-blend-mode: normal;
+    color: $light;
     padding-bottom: 16px;
   }
 }

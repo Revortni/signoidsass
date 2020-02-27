@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.5);
+  color: $light;
   mix-blend-mode: normal;
 
   @include m(checked) {
@@ -17,9 +17,10 @@
 
   @include e(input) {
     @extend %flex-center;
+
     width: 24px;
     height: 24px;
-    color: rgba(0, 0, 0, 0.5);
+    color: $light;
 
     @include m(checked) {
       width: 24px;

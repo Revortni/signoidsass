@@ -1,8 +1,6 @@
 .content {
-  padding-bottom: 37px;
-
   @include e(header) {
-    color: rgba(0, 0, 0, 0.5);
+    color: $light;
     padding-bottom: 20px;
   }
 

@@ -1,8 +1,11 @@
 import React from 'react';
 import Button from '../components/Button';
 import { MdCreateNewFolder } from 'react-icons/md';
+import { useHistory } from 'react-router-dom';
 
 const Project = () => {
+  let history = useHistory();
+
   return (
     <div className='container'>
       <div className='page container-1'>
@@ -18,19 +21,10 @@ const Project = () => {
           <Button
             label='upload & create'
             className={'instruction__button button--green button--l'}
+            onClick={() => {
+              history.push('/projects1');
+            }}
           />
-          {/* <div className='text-bubble'>
-            <div className='text-bubble__content'>
-              <div className='text-bubble__img'>
-                <img src='./icons/waving_hand.png' alt='' />
-              </div>
-              <h3 className='text-bubble__title'>First time here?</h3>
-              <p className='text-bubble__text'>
-                Select some data files to upload. We will create a project for
-                you to continue.
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

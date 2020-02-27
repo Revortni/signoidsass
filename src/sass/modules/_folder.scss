@@ -4,13 +4,16 @@
   border-radius: 5px;
   cursor: pointer;
   min-height: 70px;
+  margin-bottom: 18px;
 
   &:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: $lightest;
   }
 
   @include m(add-folder) {
-    opacity: 0.25;
+    border: 1px dashed #e8e8e8;
+    background-color: $white;
+    color: $lighter;
   }
 
   @include e(container) {
@@ -18,11 +21,13 @@
     padding-top: 15px;
     display: flex;
     justify-content: flex-start;
+    width: 250px;
   }
 
   @include e(icon) {
-    color: rgba(0, 0, 0, 0.5);
-    padding-right: 17px;
+    color: $light;
+    padding-right: 24px;
+    font-size: 20px;
   }
 
   @include e(info) {
@@ -32,18 +37,16 @@
   @include e(name) {
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
     padding-bottom: 5px;
-    padding-right: 63px;
+    padding-right: 16px;
+
+    max-width: 160px;
+    @extend %ellipsis;
   }
 
   @include e(details) {
     font-size: 11px;
     line-height: 13px;
-
-    color: #000000;
-
-    mix-blend-mode: normal;
-    opacity: 0.53;
+    color: $light;
   }
 }

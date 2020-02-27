@@ -12,13 +12,13 @@
     margin-right: 10px;
 
     @include m(empty) {
-      border-color: rgba(0, 0, 0, 0.1);
+      border-color: $lightest;
     }
   }
 
   @include e(info) {
     font-size: 11px;
     line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
+    color: $light;
   }
 }

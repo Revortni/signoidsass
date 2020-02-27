@@ -2,46 +2,29 @@
 $base__font-size: 16px;
 $base__line: 24px;
 
-$font-family--primary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
-  'Helvetica Neue';
-$font-family--secondary: -apple-system, system-ui, BlinkMacSystemFont,
-  'Segoe UI', Roboto;
+$font-family--primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Helvetica Neue', Arial, sans-serif;
+
+$font-family--secondary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Helvetica Neue', Arial, sans-serif;
 
 //Colors
 
 $blue: #003bde;
 $red: #f44336;
 $white: #ffffff;
-$dark-black: #000000;
-$black: #333333;
-$gray: #999999;
+$black: #000000;
+$gray: #d5dce0;
 $light-blue: #03a9f4;
 $yellow: #fdc228;
 $green: #61d079;
 $violet: #9c27b4;
 $dark-gray: #3c4858;
-$light: #777777;
 
 //Message Colors
 $error: lighten($red, 5%) !default;
 $success: $green !default;
-$edit: $yellow !default;
-
-$palettes: (
-  black-shades: (
-    base: $dark-black,
-    mid: darken($dark-black, 50%),
-    dark: darken($dark-black, 30%),
-    light: lighten($dark-black, 30%)
-  ),
-  blue-shades: (
-    base: $blue,
-    dark: darken($blue, 20%),
-    light: lighten($blue, 20%)
-  )
-);
-
-//Breakpoints
+$edit: $yellow !default; //Breakpoints
 $sm-device: 576px;
 $md-device: 768px;
 $lg-device: 992px;
@@ -68,13 +51,47 @@ $color-success: $green;
 $color-warn: $yellow;
 $color-danger: $red;
 
+/* shades of black */
+$lightest: rgba(0, 0, 0, 0.1);
+$lighter: rgba(0, 0, 0, 0.3);
+$light: rgba(0, 0, 0, 0.5);
+$darker: rgba(0, 0, 0, 0.7);
+
 //Color Usage
 $accent-color: $gray;
 $shadow-color: rgba($black, 0.2);
 $border-color: $gray;
-$color-text: $dark-black;
-$color-title: $dark-gray;
-$color-link: $dark-black;
+$color-text: $black;
+$color-title: $gray;
+$color-link: $black;
 $color-disabled: $light;
-$color-border: #e8e8e8;
+$color-shadow: #e8e8e8;
 $background-color: $white;
+
+/* typography */
+
+%font-xs {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+%font-sm {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+%font-s {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+%font-sx {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+%font-m {
+  font-size: 16px;
+  line-height: 19px;
+}

@@ -1,5 +1,6 @@
 .dataset-info {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid $lightest;
+  background-color: $white;
 
   @include e(close) {
     margin: 18px 12px 14px 0;
@@ -14,8 +15,7 @@
   @include e(title) {
     font-size: 16px;
     line-height: 19px;
-    color: rgba(0, 0, 0, 0.5);
-    mix-blend-mode: normal;
+    color: $light;
     text-transform: capitalize;
     padding-bottom: 4px;
   }
@@ -23,6 +23,6 @@
   @include e(content) {
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color: $black;
   }
 }

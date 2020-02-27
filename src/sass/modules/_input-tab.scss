@@ -1,5 +1,5 @@
 .input-tab {
-  color: $dark-black;
+  color: $black;
 
   @include e(input-tag) {
     width: 0.1px;
@@ -72,7 +72,7 @@
 }
 
 .uploaded {
-  color: $dark-black;
+  color: $black;
 
   @include m(disabled) {
     opacity: 0.5;

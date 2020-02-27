@@ -5,11 +5,15 @@ import Popup from '../components/popup';
 const Test = () => {
   return (
     <>
-      <div className='container-1'>
-        <div className='flex-container'>
-          <Popup />
+      <div className='container-1 '>
+        <div className='flex-container modal'>
+          <div className='modal__content'>
+            <Popup />
+          </div>
 
-          <DatasetInfo />
+          <div className='modal__content m-t-6 '>
+            <DatasetInfo />
+          </div>
         </div>
       </div>
     </>

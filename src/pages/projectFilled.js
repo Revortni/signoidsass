@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormInput } from '../components/Input';
 import Button from '../components/Button';
+import { IoMdFolderOpen } from 'react-icons/io';
 
 const Project = () => {
   const val = [
@@ -17,12 +18,20 @@ const Project = () => {
       <div className='page container-1'>
         <div className='page__header flex-container'>
           <h2>Projects</h2>
-          <div className='page__header-option'>
-            <FormInput type='select' className='input--small' options={val} />
-            <FormInput type='select' className='input--small' options={val} />
+          <div className='options'>
+            <FormInput
+              type='select'
+              className='input--small options__item options__item--space-12'
+              options={val}
+            />
+            <FormInput
+              type='select'
+              className='input--small options__item options__item--space-12'
+              options={val}
+            />
             <Button
               label='create project'
-              className='button--s button--green'
+              className='button--s button--green options__item options__item--space-12'
               type='submit'
             />
           </div>
@@ -37,7 +46,13 @@ const Project = () => {
                     <i className='fa fa-folder'></i>
                   </span>
                   <div className='folder__info'>
-                    <div className='folder__name'>Brexit Campaign</div>
+                    <div className='folder__name'>
+                      Brexit Campaign Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Repudiandae quis necessitatibus adipisci
+                      delectus dolores, eveniet, fugiat veritatis id illum
+                      pariatur expedita commodi perspiciatis modi assumenda quae
+                      at explicabo iure. Non?
+                    </div>
                     <div className='folder__details'>3 projects</div>
                   </div>
                 </div>
@@ -48,8 +63,30 @@ const Project = () => {
                     <i className='fa fa-folder'></i>
                   </span>
                   <div className='folder__info'>
-                    <div className='folder__name'>Brexit Campaign</div>
-                    <div className='folder__details'>3 projects</div>
+                    <p className='folder__name'>Brexit Campaign</p>
+                    <p className='folder__details'>3 projects</p>
+                  </div>
+                </div>
+              </div>
+              <div className='folder'>
+                <div className='folder__container'>
+                  <span className='folder__icon'>
+                    <i className='fa fa-folder'></i>
+                  </span>
+                  <div className='folder__info'>
+                    <p className='folder__name'>Brexit Campaign</p>
+                    <p className='folder__details'>3 projects</p>
+                  </div>
+                </div>
+              </div>
+              <div className='folder'>
+                <div className='folder__container'>
+                  <span className='folder__icon'>
+                    <i className='fa fa-folder'></i>
+                  </span>
+                  <div className='folder__info'>
+                    <p className='folder__name'>Brexit Campaign</p>
+                    <p className='folder__details'>3 projects</p>
                   </div>
                 </div>
               </div>
@@ -91,12 +128,14 @@ const Project = () => {
               </thead>
               <tbody className='table__body'>
                 <tr>
-                  <td>
-                    <span className='table__icon'>
-                      <i className='fa fa-folder'></i>
-                    </span>
-                    <span className='table__folder-name'>
-                      untitled project 1
+                  <td className='table__flex'>
+                    <IoMdFolderOpen size={24} className='table__icon' />
+                    <span className='table__item-name'>
+                      untitled project 1 Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Reprehenderit rerum est voluptatem
+                      animi, aliquid reiciendis sapiente veritatis quas ipsam.
+                      Facilis, odio laudantium ipsam libero suscipit quas ex
+                      iure alias laborum.
                     </span>
                   </td>
                   <td>02 jan 2019</td>
@@ -109,22 +148,20 @@ const Project = () => {
                   <td className='table__icon-container'>
                     <a href='edit'>
                       <span>
-                        <i className='fa fa-pen'></i>
+                        <i className='fa fa-pen icon'></i>
                       </span>
                     </a>
                     <a href='archive'>
                       <span>
-                        <i className='fa fa-download'></i>
+                        <i className='fa fa-download icon'></i>
                       </span>
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <span className='table__icon'>
-                      <i className='fa fa-folder'></i>
-                    </span>
-                    <span className='table__folder-name'>
+                  <td className='table__flex'>
+                    <IoMdFolderOpen size={24} className='table__icon' />
+                    <span className='table__item-name'>
                       Boris_Johnson_Popularity
                     </span>
                   </td>
@@ -138,22 +175,20 @@ const Project = () => {
                   <td className='table__icon-container'>
                     <a href='edit'>
                       <span>
-                        <i className='fa fa-pen'></i>
+                        <i className='fa fa-pen icon'></i>
                       </span>
                     </a>
                     <a href='archive'>
                       <span>
-                        <i className='fa fa-download'></i>
+                        <i className='fa fa-download icon'></i>
                       </span>
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <span className='table__icon'>
-                      <i className='fa fa-folder'></i>
-                    </span>
-                    <span className='table__folder-name'>
+                  <td className='table__flex'>
+                    <IoMdFolderOpen size={24} className='table__icon' />
+                    <span className='table__item-name'>
                       Salisbury_Customer_Feedback
                     </span>
                   </td>
@@ -167,12 +202,12 @@ const Project = () => {
                   <td className='table__icon-container'>
                     <a href='edit'>
                       <span>
-                        <i className='fa fa-pen'></i>
+                        <i className='fa fa-pen icon'></i>
                       </span>
                     </a>
                     <a href='archive'>
                       <span>
-                        <i className='fa fa-download'></i>
+                        <i className='fa fa-download icon'></i>
                       </span>
                     </a>
                   </td>

@@ -9,7 +9,7 @@ const Project = () => {
       <div className='popup'>
         <div className='popup__header flex-container popup__content'>
           <h3 className='popup__title'>upload new data</h3>
-          <span className='icon icon--24 icon--center'>
+          <span className='icon icon--center'>
             <i className='fa fa-times'></i>
           </span>
         </div>
