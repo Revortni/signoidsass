@@ -35,7 +35,7 @@ const Project = () => {
             </div>
             <div class='flex-container m-l-13'>
               <div className='icon--rounded'>
-                <MdHourglassEmpty className='icon icon--yellow' />
+                <MdHourglassEmpty className='icon icon--yellow icon--inactive' />
               </div>
               <div className='p-l-3'>
                 <span>Data processing in progress</span>
@@ -70,7 +70,7 @@ const Project = () => {
         <div className='flex-container flex-container--left flex-container--top'>
           <div className='container-3 border--right'>
             <div className='page__content'>
-              <div className='options'>
+              <div className='options flex-container'>
                 <FormInput
                   type='select'
                   options={val}

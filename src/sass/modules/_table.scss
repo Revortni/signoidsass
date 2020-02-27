@@ -39,6 +39,7 @@
     line-height: 19px;
     color: $black;
     cursor: pointer;
+    /* max width for ellipsis effect*/
     max-width: 200px;
 
     @extend %ellipsis;

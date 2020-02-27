@@ -7,7 +7,7 @@ const Project = () => {
 
   return (
     <div className='container-dataset-info dataset-info'>
-      <div className='flex-container flex-container--right p-t-4'>
+      <div className='flex-container flex-container--right'>
         <div
           className='dataset-info__close icon icon--center'
           onClick={history.goBack}

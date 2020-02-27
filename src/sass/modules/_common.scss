@@ -26,14 +26,8 @@
   cursor: pointer;
   font-size: 18px;
 
-  &:hover {
+  &:not(.icon--inactive):hover {
     color: $black;
-  }
-
-  @include m(inactive) {
-    &:hover {
-      color: $lighter;
-    }
   }
 
   @include m(yellow) {
