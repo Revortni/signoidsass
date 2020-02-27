@@ -110,6 +110,14 @@ $sides: (top, bottom, left, right);
     text-transform: capitalize;
     font-weight: bold;
   }
+
+  @include m(black) {
+    color: #000000;
+  }
+
+  @include m(light) {
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 /* for side test panel*/

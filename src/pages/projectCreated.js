@@ -9,6 +9,7 @@ import {
 } from 'react-icons/md';
 import { IoMdCloudDownload } from 'react-icons/io';
 import { GoGear } from 'react-icons/go';
+import Graph1 from '../assets/graph1.png';
 
 const Project = () => {
   const val = [
@@ -85,10 +86,22 @@ const Project = () => {
               </div>
             </div>
             <div className='page__content'>
-              <h4>Reports</h4>
+              <h4 className='text--light p-b-11'>Reports</h4>
+              <div className='flex-container flex-container--left'>
+                <div>
+                  <div className='flex-container p-b-4'>
+                    <h3 className='text--black text--bold '>
+                      Key Concepts (ngram Analysis)
+                    </h3>
+
+                    <MdReply size={24} className='icon mirror' />
+                  </div>
+                  <img src={Graph1} alt='graph' />
+                </div>
+              </div>
             </div>
           </div>
-          <div className='page__content p-l-7'>
+          <div className='side-bar page__content p-l-7'>
             <div>
               <h4>project dataset</h4>
               <div className='card'>
@@ -106,6 +119,7 @@ const Project = () => {
             </div>
             <div className='side-bar__content'>
               <h4>toolbox</h4>
+              <div className='card card--empty'></div>
             </div>
           </div>
         </div>
