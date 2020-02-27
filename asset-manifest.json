@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/signoidsass/static/css/main.bca29542.chunk.css",
-    "main.js": "/signoidsass/static/js/main.92462fb2.chunk.js",
-    "main.js.map": "/signoidsass/static/js/main.92462fb2.chunk.js.map",
+    "main.css": "/signoidsass/static/css/main.c7fbda12.chunk.css",
+    "main.js": "/signoidsass/static/js/main.54d1139a.chunk.js",
+    "main.js.map": "/signoidsass/static/js/main.54d1139a.chunk.js.map",
     "runtime-main.js": "/signoidsass/static/js/runtime-main.16c29646.js",
     "runtime-main.js.map": "/signoidsass/static/js/runtime-main.16c29646.js.map",
     "static/js/2.8b878f52.chunk.js": "/signoidsass/static/js/2.8b878f52.chunk.js",
     "static/js/2.8b878f52.chunk.js.map": "/signoidsass/static/js/2.8b878f52.chunk.js.map",
     "index.html": "/signoidsass/index.html",
-    "precache-manifest.fe14d38f4c43f7e82dfbd57ce0307ac8.js": "/signoidsass/precache-manifest.fe14d38f4c43f7e82dfbd57ce0307ac8.js",
+    "precache-manifest.6229efe6d08d9218ef3be73c8d4e3b4c.js": "/signoidsass/precache-manifest.6229efe6d08d9218ef3be73c8d4e3b4c.js",
     "service-worker.js": "/signoidsass/service-worker.js",
-    "static/css/main.bca29542.chunk.css.map": "/signoidsass/static/css/main.bca29542.chunk.css.map",
+    "static/css/main.c7fbda12.chunk.css.map": "/signoidsass/static/css/main.c7fbda12.chunk.css.map",
     "static/js/2.8b878f52.chunk.js.LICENSE.txt": "/signoidsass/static/js/2.8b878f52.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/signoidsass/static/media/logo.a4d29a5d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.16c29646.js",
     "static/js/2.8b878f52.chunk.js",
-    "static/css/main.bca29542.chunk.css",
-    "static/js/main.92462fb2.chunk.js"
+    "static/css/main.c7fbda12.chunk.css",
+    "static/js/main.54d1139a.chunk.js"
   ]
 }
