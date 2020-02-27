@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from './Logo';
 import Nav from './Nav';
+import AvatarImg from '../assets/pp.png';
 
 const Header = params => {
   return (
@@ -10,14 +11,12 @@ const Header = params => {
           <Logo />
         </div>
         <div className='header__options'>
-          {/* <div className='header__nav'> */}
           <Nav />
-          {/* </div> */}
           <div className='header__profile'>
             <a href='#profile'>
               <div className='profile avatar'>
                 <div className='profile__image avatar__photo'>
-                  <img src='./assets/pp.png' alt='profile' />
+                  <img src={AvatarImg} alt='profile' />
                 </div>
                 <span className='profile__info'>john</span>
               </div>

@@ -8,6 +8,7 @@ import {
   MdFeaturedPlayList
 } from 'react-icons/md';
 import { IoMdCloudDownload } from 'react-icons/io';
+import { GoGear } from 'react-icons/go';
 
 const Project = () => {
   const val = [
@@ -43,14 +44,17 @@ const Project = () => {
           </div>
           <div className='options'>
             <span className='options__item'>
-              <IoMdCloudDownload className='icon' />
+              <IoMdCloudDownload size={24} className='icon' />
               <span className='icon__text'>Download Report</span>
             </span>
             <span className='options__item'>
-              <MdReply className='icon mirror' />
+              <MdReply size={24} className='icon mirror' />
             </span>
             <span className='options__item'>
-              <MdEmail className='icon' />
+              <MdEmail size={24} className='icon' />
+            </span>
+            <span className='options__item'>
+              <GoGear size={24} className='icon' />
             </span>
           </div>
         </div>

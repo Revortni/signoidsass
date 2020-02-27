@@ -36,13 +36,13 @@ const Project = () => {
                 htmlFor='data-files'
               >
                 <span className='uploaded__icon'>
-                  <MdCloudUpload size={24} class='icon' />
+                  <MdCloudUpload size={24} className='icon' />
                 </span>
                 <div className='uploaded__details'>
                   <h3 className='uploaded__title'>corbyn_file_492.csv</h3>
                   <div className='uploaded__info'>.csv file 10.34 MB</div>
                 </div>
-                <MdClose size={24} class='icon' />
+                <MdClose size={24} className='icon' />
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Project = () => {
               htmlFor='data-files'
             >
               <span className='input-tab__icon'>
-                <MdCloudUpload size={24} />
+                <MdCloudUpload size={24} className='icon' />
               </span>
               <div className='input-tab__details'>
                 <h3 className='input-tab__title'>Upload data files</h3>

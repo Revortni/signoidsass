@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormInput } from './Input';
 import Button from './Button';
-import { MdCloudUpload, MdClose } from 'react-icons/md';
+import { MdCloudUpload } from 'react-icons/md';
 
 const Project = () => {
   return (
