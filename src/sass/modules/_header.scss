@@ -41,10 +41,6 @@
       margin-right: 0;
     }
 
-    &:hover {
-      background-color: #eee;
-    }
-
     @include m(active) {
       border-bottom: 3px solid $blue;
     }
