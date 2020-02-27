@@ -11,6 +11,7 @@ import { IoMdCloudDownload } from 'react-icons/io';
 import { GoGear } from 'react-icons/go';
 import Graph1 from '../assets/graph1.png';
 import GraphEmpty from '../assets/graph-empty.png';
+import { useHistory } from 'react-router-dom';
 
 const Project = () => {
   const val = [
@@ -21,6 +22,7 @@ const Project = () => {
     'ISSN',
     'Author'
   ];
+  let history = useHistory();
 
   return (
     <div className='container'>
@@ -55,7 +57,12 @@ const Project = () => {
             <span className='options__item'>
               <MdEmail size={24} className='icon' />
             </span>
-            <span className='options__item'>
+            <span
+              className='options__item'
+              onClick={() => {
+                history.push('/projectSettings');
+              }}
+            >
               <GoGear size={24} className='icon' />
             </span>
           </div>

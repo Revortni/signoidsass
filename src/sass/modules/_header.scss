@@ -9,11 +9,17 @@
   }
 
   @include e(options) {
-    margin-left: 169px;
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
     padding-right: 30px;
+
+    //arbitrary
+    margin-left: 20px;
+
+    @include mq('lg') {
+      margin-left: 169px;
+    }
   }
 
   @include e(nav) {
@@ -23,52 +29,5 @@
   @include e(profile) {
     display: flex;
     align-self: center;
-  }
-}
-
-.nav {
-  display: flex;
-  align-items: stretch;
-
-  @include e(link) {
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: capitalize;
-    margin-right: 65px;
-    padding-top: 20px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    @include m(active) {
-      border-bottom: 3px solid $blue;
-    }
-
-    @include m(disabled) {
-      opacity: 0.2;
-      cursor: default;
-    }
-  }
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-
-  @include e(image) {
-    margin-right: 12px;
-  }
-
-  @include e(info) {
-    text-transform: capitalize;
-    font-size: 14px;
-    line-height: 17px;
-    margin-right: 8px;
-    color: $darker;
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 }

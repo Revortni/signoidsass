@@ -12,8 +12,8 @@ const Project = () => {
         <div className='page__header flex-container'>
           <h2 className='page__title'>Projects</h2>
         </div>
-        <div className='instruction'>
-          <MdCreateNewFolder size={66} className='icon' />
+        <div className='instruction p-t-17'>
+          <MdCreateNewFolder size={64} className='icon icon--inactive' />
           <div className='instruction__text'>
             <p>Currently, there are no projects.</p>
             <p>Upload data files to get started with your first project.</p>

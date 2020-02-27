@@ -2,14 +2,17 @@ import React from 'react';
 import { FormInput } from './Input';
 import Button from './Button';
 import { MdCloudUpload } from 'react-icons/md';
+import { useHistory } from 'react-router-dom';
 
 const Project = () => {
+  let history = useHistory();
+
   return (
     <div className='container-popup'>
       <div className='popup'>
         <div className='popup__header flex-container popup__content'>
           <h3 className='popup__title'>upload new data</h3>
-          <span className='icon icon--center'>
+          <span className='icon icon--center' onClick={history.goBack}>
             <i className='fa fa-times'></i>
           </span>
         </div>

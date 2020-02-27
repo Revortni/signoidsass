@@ -1,11 +1,29 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+
 const Nav = () => {
+  let history = useHistory();
+
   return (
     <nav className='nav'>
-      <a href='#project' alt='nav' className='nav__link nav__link--active'>
+      <a
+        href='/projects'
+        alt='nav'
+        className='nav__link nav__link--active'
+        onClick={() => {
+          history.push('/projects');
+        }}
+      >
         projects
       </a>
-      <a href='#data-library' alt='nav' className='nav__link'>
+      <a
+        href='/datasets'
+        alt='nav'
+        className='nav__link'
+        onClick={() => {
+          history.push('/datasets');
+        }}
+      >
         data library
       </a>
       <a

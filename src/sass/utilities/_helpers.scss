@@ -134,6 +134,11 @@ $sides: (top, bottom, left, right);
   position: fixed;
   left: 0;
   top: 70px;
+  display: none;
+
+  @include mq('lg') {
+    display: block;
+  }
 
   ul {
     li {

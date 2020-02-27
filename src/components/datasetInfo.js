@@ -1,11 +1,17 @@
 import React from 'react';
 import { FormInput } from '../components/Input';
+import { useHistory } from 'react-router-dom';
 
 const Project = () => {
+  let history = useHistory();
+
   return (
     <div className='container-dataset-info dataset-info'>
       <div className='flex-container flex-container--right p-t-4'>
-        <div className='dataset-info__close icon icon--24 icon--center'>
+        <div
+          className='dataset-info__close icon icon--center'
+          onClick={history.goBack}
+        >
           <i className='fa fa-times'></i>
         </div>
       </div>

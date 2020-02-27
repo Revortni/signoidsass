@@ -1,0 +1,20 @@
+.profile {
+  display: flex;
+  align-items: center;
+
+  @include e(image) {
+    margin-right: 12px;
+  }
+
+  @include e(info) {
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 8px;
+    color: $darker;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

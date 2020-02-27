@@ -8,6 +8,7 @@ import ProjectsFilled from './pages/projectFilled';
 import ProjectsCreated from './pages/projectCreated';
 import ProjectsSettings from './pages/projectSettings';
 import DatasetsFilled from './pages/datasetsFilled';
+import DatasetUpload from './pages/DatasetUpload';
 import Datasets from './pages/datasets';
 import Popups from './pages/testPage';
 import './App.scss';
@@ -16,8 +17,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 const App = () => {
   return (
     <div className='App'>
-      <Header />
       <Router>
+        <Header />
         <nav className='test-link'>
           <ul>
             <li>
@@ -33,7 +34,7 @@ const App = () => {
               <Link to='/projects3'>Projects New Image Selected</Link>
             </li>
             <li>
-              <Link to='/projectFilled'>Projects Filled</Link>
+              <Link to='/'>Projects Filled</Link>
             </li>
             <li>
               <Link to='/projectCreated'>Projects Created</Link>
@@ -53,44 +54,38 @@ const App = () => {
           </ul>
         </nav>
         <Switch>
-          <Route path='/projects'>
+          <Route exact path='/projects'>
             <Projects />
           </Route>
-
-          <Route path='/projects1'>
+          <Route exact path='/projects1'>
             <ProjectsNew />
           </Route>
-
-          <Route path='/projects2'>
+          <Route exact path='/projects2'>
             <ProjectsDatasetSelected />
           </Route>
-
-          <Route path='/projects3'>
+          <Route exact path='/projects3'>
             <ProjectsImageSelected />
           </Route>
-
-          <Route path='/projectFilled'>
+          <Route exact path='/'>
             <ProjectsFilled />
           </Route>
-
-          <Route path='/projectCreated'>
+          <Route exact path='/projectCreated'>
             <ProjectsCreated />
           </Route>
-
-          <Route path='/projectSettings'>
+          <Route exact path='/projectSettings'>
             <ProjectsSettings />
           </Route>
-
-          <Route path='/datasets'>
+          <Route exact path='/datasets'>
             <Datasets />
           </Route>
-
-          <Route path='/datasetsFilled'>
+          <Route exact path='/datasetsFilled'>
             <DatasetsFilled />
           </Route>
-
-          <Route path='/popups'>
+          <Route exact path='/popups'>
             <Popups />
+          </Route>
+          <Route exact path='/datasetUpload'>
+            <DatasetUpload />
           </Route>
         </Switch>
       </Router>

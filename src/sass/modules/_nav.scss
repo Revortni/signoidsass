@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  align-items: stretch;
+
+  @include e(link) {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    margin-right: 65px;
+    padding-top: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include m(active) {
+      border-bottom: 3px solid $blue;
+    }
+
+    @include m(disabled) {
+      opacity: 0.2;
+      cursor: default;
+    }
+  }
+}

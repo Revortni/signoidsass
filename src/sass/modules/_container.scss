@@ -15,9 +15,15 @@
 
 /* Primary container with 290px spacing on the left*/
 .container-1 {
-  margin-left: 290px;
+  margin: 0 auto;
   width: 100%;
   max-width: 1046px;
+  padding: 0 30px;
+
+  @include mq('lg') {
+    margin-left: 290px;
+    padding: 0;
+  }
 }
 
 /* Container covering the whole page*/
@@ -72,4 +78,9 @@
 .form {
   max-width: 541px;
   width: 100%;
+  margin: 0 auto;
+
+  @include mq('lg') {
+    margin-left: 0;
+  }
 }

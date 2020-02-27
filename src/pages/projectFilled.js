@@ -2,6 +2,7 @@ import React from 'react';
 import { FormInput } from '../components/Input';
 import Button from '../components/Button';
 import { IoMdFolderOpen } from 'react-icons/io';
+import { useHistory } from 'react-router-dom';
 
 const Project = () => {
   const val = [
@@ -12,6 +13,8 @@ const Project = () => {
     'ISSN',
     'Author'
   ];
+
+  let history = useHistory();
 
   return (
     <div className='container'>
@@ -33,6 +36,9 @@ const Project = () => {
               label='create project'
               className='button--s button--green options__item options__item--space-12'
               type='submit'
+              onClick={() => {
+                history.push('/projects1');
+              }}
             />
           </div>
         </div>
@@ -128,7 +134,12 @@ const Project = () => {
               </thead>
               <tbody className='table__body'>
                 <tr>
-                  <td className='table__flex'>
+                  <td
+                    className='table__flex'
+                    onClick={() => {
+                      history.push('/projectCreated');
+                    }}
+                  >
                     <IoMdFolderOpen size={24} className='table__icon' />
                     <span className='table__item-name'>
                       untitled project 1 Lorem ipsum dolor sit, amet consectetur

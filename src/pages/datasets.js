@@ -2,8 +2,11 @@ import React from 'react';
 import Button from '../components/Button';
 import StorageInfo from '../components/StorageInfo';
 import { MdCreateNewFolder } from 'react-icons/md';
+import { useHistory } from 'react-router-dom';
 
 const Project = () => {
+  let history = useHistory();
+
   return (
     <div className='container'>
       <div className='page container-1'>
@@ -14,7 +17,7 @@ const Project = () => {
           </div>
         </div>
         <div className='instruction p-t-17'>
-          <MdCreateNewFolder />
+          <MdCreateNewFolder size={64} className='icon icon--inactive' />
           <div className='instruction__text'>
             <p>
               Currently, there are no files in your library. Upload your first
@@ -24,6 +27,9 @@ const Project = () => {
           <Button
             label='upload data'
             className={'instruction__button button--green button--l'}
+            onClick={() => {
+              history.push('/datasetUpload');
+            }}
           />
         </div>
       </div>

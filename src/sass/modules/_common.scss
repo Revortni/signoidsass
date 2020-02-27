@@ -30,6 +30,12 @@
     color: $black;
   }
 
+  @include m(inactive) {
+    &:hover {
+      color: $lighter;
+    }
+  }
+
   @include m(yellow) {
     color: $color-warn;
   }

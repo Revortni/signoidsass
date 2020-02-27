@@ -2,8 +2,11 @@ import React from 'react';
 import Button from '../components/Button';
 import StorageInfo from '../components/StorageInfo';
 import { IoMdSync, IoMdFolder } from 'react-icons/io';
+import { useHistory } from 'react-router-dom';
 
 const Project = () => {
+  let history = useHistory();
+
   return (
     <div className='container'>
       <div className='page container-1'>
@@ -12,7 +15,11 @@ const Project = () => {
           <div className='options'>
             <StorageInfo />
             <div className='m-l-8'>
-              <Button label='upload data' className='button--s' />
+              <Button
+                label='upload data'
+                className='button--s'
+                onClick={history.push('/dataUpload')}
+              />
             </div>
           </div>
         </div>
