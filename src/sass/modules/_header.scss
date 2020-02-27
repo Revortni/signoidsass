@@ -13,12 +13,14 @@
     flex-grow: 1;
     justify-content: space-between;
     padding-right: 30px;
+    // display: none;
 
     //arbitrary
     margin-left: 20px;
 
     @include mq('lg') {
       margin-left: 169px;
+      display: flex;
     }
   }
 

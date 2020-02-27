@@ -18,7 +18,9 @@ const Project = () => {
               <Button
                 label='upload data'
                 className='button--s'
-                onClick={history.push('/dataUpload')}
+                onClick={() => {
+                  history.push('/dataUpload');
+                }}
               />
             </div>
           </div>

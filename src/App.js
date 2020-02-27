@@ -66,9 +66,6 @@ const App = () => {
           <Route exact path='/projects3'>
             <ProjectsImageSelected />
           </Route>
-          <Route exact path='/'>
-            <ProjectsFilled />
-          </Route>
           <Route exact path='/projectCreated'>
             <ProjectsCreated />
           </Route>
@@ -86,6 +83,9 @@ const App = () => {
           </Route>
           <Route exact path='/datasetUpload'>
             <DatasetUpload />
+          </Route>
+          <Route path='/'>
+            <ProjectsFilled />
           </Route>
         </Switch>
       </Router>
