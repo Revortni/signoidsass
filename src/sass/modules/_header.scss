@@ -10,10 +10,11 @@
 
   @include e(options) {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     flex-grow: 1;
-    justify-content: space-between;
-    padding-right: 30px;
-    // display: none;
+    padding: 20px;
 
     //arbitrary
     margin-left: 20px;
@@ -21,15 +22,56 @@
     @include mq('lg') {
       margin-left: 169px;
       display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      padding: 0;
+      padding-right: 30px;
     }
   }
+
+  /* toggle container*/
+
+  @include e(toggle-container) {
+    display: none;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-direction: column;
+    // display: none;
+
+    @include mq('lg') {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    @include m(show) {
+      display: flex;
+    }
+  }
+
+  /* Navigation tabs*/
 
   @include e(nav) {
     align-items: stretch;
   }
 
-  @include e(profile) {
+  @include e(item) {
     display: flex;
     align-self: center;
+  }
+
+  /* Burger menu*/
+
+  @include e(toggle-icon) {
+    color: $black;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    order: -1;
+
+    @include mq('lg') {
+      display: none;
+    }
   }
 }
