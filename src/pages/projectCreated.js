@@ -33,7 +33,7 @@ const Project = () => {
               <h2>Untitled Project 1</h2>
               <FaPen className='icon m-l-4' />
             </div>
-            <div class='flex-container m-l-13'>
+            <div className='flex-container m-l-13'>
               <div className='icon--rounded'>
                 <MdHourglassEmpty className='icon icon--yellow icon--inactive' />
               </div>
@@ -70,7 +70,7 @@ const Project = () => {
         <div className='flex-container flex-container--left flex-container--top'>
           <div className='container-3 border--right'>
             <div className='page__content'>
-              <div className='options flex-container'>
+              <div className='options'>
                 <FormInput
                   type='select'
                   options={val}

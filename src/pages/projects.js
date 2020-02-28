@@ -22,7 +22,7 @@ const Project = () => {
             label='upload & create'
             className={'instruction__button button--green button--l'}
             onClick={() => {
-              history.push('/projects1');
+              history.push('/projects/new');
             }}
           />
         </div>

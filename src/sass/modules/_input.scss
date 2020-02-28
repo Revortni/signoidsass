@@ -11,6 +11,12 @@
     padding: 14px 0px 10px 20px;
     color: $light;
     background-color: $white;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    background: url(../../assets/arrow_drop_down.png) no-repeat right;
+    background-size: 24px 24px;
+    background-position: 98%;
     @extend %border;
   }
 
@@ -63,7 +69,9 @@
       line-height: 13px;
       margin: 0;
       padding: 0;
-      padding: 6px 12px;
+      padding: 8px 12px 7px 12px;
+      background-size: 18px 18px;
+      background-position: 95%;
 
       option {
         border: none;

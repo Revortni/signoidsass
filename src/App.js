@@ -25,7 +25,7 @@ const App = () => {
               <Link to='/projects'>Projects</Link>
             </li>
             <li>
-              <Link to='/projects1'>Projects New</Link>
+              <Link to='/projects/new'>Projects New</Link>
             </li>
             <li>
               <Link to='/projects2'>Projects New dataset Selected</Link>
@@ -57,7 +57,7 @@ const App = () => {
           <Route exact path='/projects'>
             <Projects />
           </Route>
-          <Route exact path='/projects1'>
+          <Route exact path='/projects/new'>
             <ProjectsNew />
           </Route>
           <Route exact path='/projects2'>
