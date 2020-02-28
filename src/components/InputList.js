@@ -24,7 +24,7 @@ const InputItem = ({ text }) => {
   return (
     <div className='input-list__item'>
       <span className='input-list__text'>{text}</span>
-      <MdClose className='input-list__icon icon' />
+      <MdClose className='input-list__icon icon' size={14} />
     </div>
   );
 };

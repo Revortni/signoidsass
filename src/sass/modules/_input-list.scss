@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     border: 1px solid $lighter;
-    border-radius: 13px;
+    border-radius: 18px;
     margin-right: 10px;
     padding: 6px 8px 6px 12px;
     margin-bottom: 10px;
@@ -24,7 +24,6 @@
 
   @include e(text) {
     font-size: 11px;
-    line-height: 13px;
   }
 
   @include e(icon) {

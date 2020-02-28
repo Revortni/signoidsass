@@ -1,0 +1,22 @@
+.select-default {
+  border: none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background: url(../../assets/arrow_drop_down.png) no-repeat right;
+  background-size: 24px 24px;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  padding: 5px 32px 5px 0;
+
+  :focus {
+    outline: none;
+    outline-color: #fff;
+  }
+
+  option {
+    border-color: #fff;
+    outline-color: #fff;
+  }
+}

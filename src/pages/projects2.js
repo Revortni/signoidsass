@@ -66,7 +66,7 @@ const Project = () => {
             />
           </div>
           <InputList label='Select categories you would like to use for project' />
-          <div className='input-tab'>
+          <div className='input-tab input-tab--disabled'>
             <span className='input-tab__label'>add data files</span>
             <label
               className='input-tab__tab input-tab__tab--2x'
@@ -90,6 +90,16 @@ const Project = () => {
               multiple
             />
           </div>
+          <div className='p-t-8'>
+            <h4 className='p-b-2'>Project settings</h4>
+            <select className='select-default'>
+              <option value='default'>Customise default settings</option>
+              <option value='default'>Customise default settings</option>
+              <option value='default'>Customise default settings</option>
+              <option value='default'>Customise default settings</option>
+            </select>
+          </div>
+
           <div className='p-t-8'>
             <Button
               label='create'
