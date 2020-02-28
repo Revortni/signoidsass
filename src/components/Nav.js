@@ -1,38 +1,25 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   let history = useHistory();
 
   return (
     <nav className='nav'>
-      <a
-        href='/projects'
-        alt='nav'
-        className='nav__link nav__link--active'
-        onClick={() => {
-          history.push('/projects');
-        }}
-      >
+      <Link to='/projects' alt='nav' className='nav__link nav__link--active'>
         projects
-      </a>
-      <a
-        href='/datasets'
-        alt='nav'
-        className='nav__link'
-        onClick={() => {
-          history.push('/datasets');
-        }}
-      >
+      </Link>
+      <Link to='/datasets' alt='nav' className='nav__link'>
         data library
-      </a>
-      <a
-        href='#insight-gallery'
+      </Link>
+      <Link
+        to='#insight-gallery'
         alt='nav'
         className='nav__link nav__link--disabled'
       >
         insight gallery
-      </a>
+      </Link>
     </nav>
   );
 };
