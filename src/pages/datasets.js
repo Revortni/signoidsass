@@ -28,7 +28,7 @@ const Project = () => {
             label='upload data'
             className={'instruction__button button--green button--l'}
             onClick={() => {
-              history.push('/datasetUpload');
+              history.push('/datasets/datasetUpload');
             }}
           />
         </div>

@@ -60,7 +60,7 @@ const Project = () => {
             <span
               className='options__item'
               onClick={() => {
-                history.push('/projectSettings');
+                history.push('/projects/projectSettings');
               }}
             >
               <GoGear size={24} className='icon' />

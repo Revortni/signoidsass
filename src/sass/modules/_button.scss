@@ -55,7 +55,6 @@
 
   @include m(bordered) {
     border: 1px solid $lighter;
-    box-sizing: border-box;
     border-radius: 4px;
   }
 

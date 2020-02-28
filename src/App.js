@@ -28,25 +28,29 @@ const App = () => {
               <Link to='/projects/new'>Projects New</Link>
             </li>
             <li>
-              <Link to='/projects2'>Projects New dataset Selected</Link>
+              <Link to='/projects/datasetSelected'>
+                Projects New dataset Selected
+              </Link>
             </li>
             <li>
-              <Link to='/projects3'>Projects New Image Selected</Link>
+              <Link to='/projects/imageSelected'>
+                Projects New Image Selected
+              </Link>
             </li>
             <li>
               <Link to='/'>Projects Filled</Link>
             </li>
             <li>
-              <Link to='/projectCreated'>Projects Created</Link>
+              <Link to='/projects/projectCreated'>Projects Created</Link>
             </li>
             <li>
-              <Link to='/projectSettings'>Project Settings</Link>
+              <Link to='/projects/projectSettings'>Project Settings</Link>
             </li>
             <li>
               <Link to='/datasets'>Datasets</Link>
             </li>
             <li>
-              <Link to='/datasetsFilled'>Datasets Filled</Link>
+              <Link to='/datasets/filled'>Datasets Filled</Link>
             </li>
             <li>
               <Link to='/popups'>Popups</Link>
@@ -60,28 +64,28 @@ const App = () => {
           <Route exact path='/projects/new'>
             <ProjectsNew />
           </Route>
-          <Route exact path='/projects2'>
+          <Route exact path='/projects/datasetSelected'>
             <ProjectsDatasetSelected />
           </Route>
-          <Route exact path='/projects3'>
+          <Route exact path='/projects/imageSelected'>
             <ProjectsImageSelected />
           </Route>
-          <Route exact path='/projectCreated'>
+          <Route exact path='/projects/projectCreated'>
             <ProjectsCreated />
           </Route>
-          <Route exact path='/projectSettings'>
+          <Route exact path='/projects/projectSettings'>
             <ProjectsSettings />
           </Route>
           <Route exact path='/datasets'>
             <Datasets />
           </Route>
-          <Route exact path='/datasetsFilled'>
+          <Route exact path='/datasets/filled'>
             <DatasetsFilled />
           </Route>
           <Route exact path='/popups'>
             <Popups />
           </Route>
-          <Route exact path='/datasetUpload'>
+          <Route exact path='/datasets/datasetUpload'>
             <DatasetUpload />
           </Route>
           <Route path='/'>

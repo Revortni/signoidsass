@@ -37,7 +37,7 @@ const Project = () => {
               className='button--s button--green options__item options__item--space-12'
               type='submit'
               onClick={() => {
-                history.push('/projects1');
+                history.push('/projects/new');
               }}
             />
           </div>
@@ -137,7 +137,7 @@ const Project = () => {
                   <td
                     className='table__flex'
                     onClick={() => {
-                      history.push('/projectCreated');
+                      history.push('/projects/projectCreated');
                     }}
                   >
                     <IoMdFolderOpen size={24} className='table__icon' />

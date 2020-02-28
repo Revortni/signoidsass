@@ -19,7 +19,7 @@ const Project = () => {
                 label='upload data'
                 className='button--s'
                 onClick={() => {
-                  history.push('/dataUpload');
+                  history.push('/datasetUpload');
                 }}
               />
             </div>
