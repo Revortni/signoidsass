@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/signoidsass/static/css/main.a32935fc.chunk.css",
+    "main.css": "/signoidsass/static/css/main.be65f7ff.chunk.css",
     "main.js": "/signoidsass/static/js/main.ad5aa37e.chunk.js",
     "main.js.map": "/signoidsass/static/js/main.ad5aa37e.chunk.js.map",
     "runtime-main.js": "/signoidsass/static/js/runtime-main.16c29646.js",
@@ -8,16 +8,16 @@
     "static/js/2.8d0f864c.chunk.js": "/signoidsass/static/js/2.8d0f864c.chunk.js",
     "static/js/2.8d0f864c.chunk.js.map": "/signoidsass/static/js/2.8d0f864c.chunk.js.map",
     "index.html": "/signoidsass/index.html",
-    "precache-manifest.3ee239e0f1ef246ea565991761e097f2.js": "/signoidsass/precache-manifest.3ee239e0f1ef246ea565991761e097f2.js",
+    "precache-manifest.01ece4c162148b5a746bd33c87393602.js": "/signoidsass/precache-manifest.01ece4c162148b5a746bd33c87393602.js",
     "service-worker.js": "/signoidsass/service-worker.js",
-    "static/css/main.a32935fc.chunk.css.map": "/signoidsass/static/css/main.a32935fc.chunk.css.map",
+    "static/css/main.be65f7ff.chunk.css.map": "/signoidsass/static/css/main.be65f7ff.chunk.css.map",
     "static/js/2.8d0f864c.chunk.js.LICENSE.txt": "/signoidsass/static/js/2.8d0f864c.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/signoidsass/static/media/logo.a4d29a5d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.16c29646.js",
     "static/js/2.8d0f864c.chunk.js",
-    "static/css/main.a32935fc.chunk.css",
+    "static/css/main.be65f7ff.chunk.css",
     "static/js/main.ad5aa37e.chunk.js"
   ]
 }
