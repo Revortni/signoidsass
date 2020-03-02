@@ -71,6 +71,7 @@ const Project = () => {
           <Button
             label='cancel'
             className='popup__button button--l button--white'
+            onClick={history.goBack}
           ></Button>
           <Button label='upload' className='popup__button button--l'></Button>
         </div>
