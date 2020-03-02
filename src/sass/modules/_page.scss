@@ -1,7 +1,9 @@
 .page {
   width: 100%;
   padding-bottom: 272px;
-  margin-top: 60px;
+
+  //for fixed header
+  margin-top: 100px;
 
   @include e(header) {
     padding-top: 40px;
