@@ -3,6 +3,13 @@
   color: $light;
   mix-blend-mode: normal;
 
+  label {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 4px;
+  }
+
   select {
     font-size: 16px;
     line-height: 19px;
@@ -25,7 +32,7 @@
     line-height: 19px;
     width: 100%;
     display: block;
-    padding: 14px 0 13px 20px;
+    padding: 14px 0 12px 20px;
     color: $black;
 
     @extend %border;
@@ -44,7 +51,7 @@
     line-height: 19px;
     width: 100%;
     display: block;
-    padding: 14px 0 13px 20px;
+    padding: 14px 0 12px 20px;
     color: $black;
 
     resize: none;

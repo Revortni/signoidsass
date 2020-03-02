@@ -13,7 +13,7 @@ const Header = params => {
 
   return (
     <header className='header'>
-      <div className='container'>
+      <div className='container container--header-container'>
         <div className='header__logo'>
           <Logo />
         </div>

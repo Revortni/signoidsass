@@ -111,7 +111,7 @@ const Project = () => {
               <div className='folder folder--add-folder'>
                 <div className='folder__container'>
                   <span className='folder__icon'>
-                    <i className='fa fa-folder'></i>
+                    <i className='fa fa-folder-plus'></i>
                   </span>
                   <div className='folder__info'>
                     <div className='folder__name'>Create Folder</div>

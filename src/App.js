@@ -12,7 +12,13 @@ import DatasetUpload from './pages/DatasetUpload';
 import Datasets from './pages/datasets';
 import Popups from './pages/testPage';
 import './App.scss';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from 'react-router-dom';
 
 const App = () => {
   return (
@@ -38,7 +44,9 @@ const App = () => {
               </Link>
             </li>
             <li>
-              <Link to='/'>Projects Filled</Link>
+              <Link to='/'>
+                <Redirect to='/projects/projectFilleds' />
+              </Link>
             </li>
             <li>
               <Link to='/projects/projectCreated'>Projects Created</Link>

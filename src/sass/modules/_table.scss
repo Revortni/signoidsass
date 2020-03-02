@@ -40,7 +40,7 @@
     color: $black;
     cursor: pointer;
     /* max width for ellipsis effect*/
-    max-width: 200px;
+    max-width: 100px;
 
     @extend %ellipsis;
 
@@ -50,6 +50,10 @@
 
     @include mq('lg') {
       max-width: 400px;
+    }
+
+    @include mq('md') {
+      max-width: 200px;
     }
   }
 
