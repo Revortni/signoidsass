@@ -52,6 +52,9 @@ const App = () => {
               <Link to='/projects/projectCreated'>Projects Created</Link>
             </li>
             <li>
+              <Link to='/'>Projects Filled</Link>
+            </li>
+            <li>
               <Link to='/projects/projectSettings'>Project Settings</Link>
             </li>
             <li>

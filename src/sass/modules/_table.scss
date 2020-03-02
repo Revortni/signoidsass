@@ -9,7 +9,9 @@
     text-transform: uppercase;
     color: $light;
 
-    padding: 0 10px;
+    td {
+      padding-bottom: 16px;
+    }
   }
 
   @include e(body) {
@@ -18,7 +20,7 @@
     }
 
     td {
-      padding: 18px 10px;
+      padding: 18px 0px;
     }
   }
 
@@ -53,7 +55,7 @@
     }
 
     @include mq('md') {
-      max-width: 200px;
+      max-width: 300px;
     }
   }
 
