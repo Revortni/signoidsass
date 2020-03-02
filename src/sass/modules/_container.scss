@@ -16,7 +16,7 @@
   max-width: 1046px;
   padding: 0 30px;
 
-  @include mq('lg') {
+  @include mq('xl') {
     margin-left: 290px;
     padding: 0;
   }
